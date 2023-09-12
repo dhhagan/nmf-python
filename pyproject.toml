@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nmf-python"
+version = "0.1.0"
+description = ""
+authors = ["David H. Hagan <david.hagan@quant-aq.com>"]
+license = "BSD-3"
+readme = "README.md"
+packages = [{include = "nonnegfac"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+scipy = "^1.11.2"
+numpy = "^1.25.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

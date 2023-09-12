@@ -1,3 +1,6 @@
+import numpy 
+import scipy
+
 info = {'name':'nonnegfac',
         'description':'Python Implementations of Nonnegative Matrix Factorization Algorithms',
         'version':'0.1',
@@ -8,14 +11,15 @@ info = {'name':'nonnegfac',
         }
 
 if __name__ == '__main__':
-    try:
-        import numpy
-        import scipy
-    except ImportError:
-        print ('This package requires Numpy (http://www.numpy.org) and Scipy (http://www.scipy.org) installed.')
-        print ('Exiting without installation.')
-        import sys
-        sys.exit(-1)
+    # try:
+    #     import numpy 
+    #     import scipy
+    # except ImportError as e:
+    #     print (e)
+    #     # print ('This package requires Numpy (http://www.numpy.org) and Scipy (http://www.scipy.org) installed.')
+    #     # print ('Exiting without installation.')
+    #     import sys
+    #     sys.exit(-1)
 
     from distutils.core import setup
     setup(**info)
